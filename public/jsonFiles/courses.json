@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Graphic Design MasterClass LEarn GREAT Design",
+    "ratings": 4.5,
+    "reviewCount": "(102,716)",
+    "enrolledStudent": "46,116",
+    "lectureLength": "11 hr",
+    "lectureClasses": "46 lectures",
+    "lectureType": "beginner",
+    "image": "./images/teacher.jpg",
+    "name": "Umar Ajmal",
+    "CoursePrice": 89.0
+  },
+  {
+    "title": "The Full Stack Web Developer Course",
+    "ratings": "4.7",
+    "reviewCount": "(115,716)",
+    "enrolledStudent": "88,116",
+    "lectureLength": "30 hr",
+    "lectureClasses": "90 lectures",
+    "lectureType": "Beginner",
+    "image": "./images/teacher2.jpg",
+    "name": "Surja Das",
+    "CoursePrice": 112.0
+  },
+  {
+    "title": "Math For Data Science Masterclass ",
+    "ratings": 4.3,
+    "reviewCount": "(90,445)",
+    "enrolledStudent": "46,116",
+    "lectureLength": "15 hr",
+    "lectureClasses": "64 lectures",
+    "lectureType": "Beginner",
+    "image": "./images/teacher3.jpg",
+    "name": "Kumal Hasan",
+    "CoursePrice": 99.0
+  },
+  {
+    "title": "Graphic Design MasterClass LEarn GREAT Design",
+    "ratings": 4.6,
+    "reviewCount": "(102,716)",
+    "enrolledStudent": "46,116",
+    "lectureLength": "11 hr",
+    "lectureClasses": "46 lectures",
+    "lectureType": "beginner",
+    "image": "./images/teacher.jpg",
+    "name": "Umar Ajmal",
+    "CoursePrice": 89.0
+  }
+]

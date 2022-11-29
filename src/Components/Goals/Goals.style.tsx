@@ -19,13 +19,26 @@ export const GoalsCardWrapper: any = styled.div`
       grid-template-columns: 1fr;
     }
     .card {
-      padding: 20px;
+      display: grid;
+      text-align: start;
+      padding: 30px;
       background-color: var(--clr-white);
       border-radius: var(--border-radius);
       box-shadow: var(--box-shadow);
+      place-content: start;
+      .title {
+        margin-top: 30px;
+      }
+      .content {
+        margin: 0;
+        margin-top: 30px;
+        font-size: var(--fs-200);
+      }
       svg {
         font-size: 58px;
         padding: 12px;
+        background-color: var(--clr-primary);
+        color: var(--clr-white);
         border-radius: var(--border-radius);
       }
     }

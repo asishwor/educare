@@ -53,7 +53,7 @@ const Goals = () => {
                     <div className="card__icon">
                       <div className="icon"></div>
                       <h4 className="title">{elm.title}</h4>
-                      <p className="title">{elm.content}</p>
+                      <p className="content">{elm.content}</p>
                     </div>
                   </div>
                 );
