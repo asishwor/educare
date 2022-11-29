@@ -20,7 +20,7 @@ box-sizing: border-box;
     --clr-secondary: #151328;
     --clr-heading:#413e4e;
     --clr-body-font:#818393;
-    --clr-body-bg:#fcfbff;
+    --clr-body-bg:#EEF2F5;
     --clr-sectioon-bg:#f5f9fc;
     --clr-orange:#e98e3a;
     --clr-pink:#e39699;
@@ -36,7 +36,7 @@ box-sizing: border-box;
     --fs-700:2.5rem;
     --fs-800:4.3rem;
     // Box shadow 
-    --box-shadow:0 0 10px #0006;
+    --box-shadow:0 0 10px #0001;
     --border-radius:12px ;
     //transition 
     --transition:all .5s ease-out;
