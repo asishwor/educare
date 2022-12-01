@@ -15,6 +15,9 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
+img{
+    max-width: 100%;
+}
 :root{
     --clr-primary:#877cf6;
     --clr-secondary: #151328;

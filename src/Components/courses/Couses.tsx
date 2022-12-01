@@ -1,5 +1,10 @@
 import { useEffect, useState } from "react";
 import { CousesStyles } from "./Courses.styles";
+import AccessTimeIcon from "@mui/icons-material/AccessTime";
+import StarIcon from "@mui/icons-material/Star";
+import StickyNote2Icon from "@mui/icons-material/StickyNote2";
+import SignalCellularAltIcon from "@mui/icons-material/SignalCellularAlt";
+import { Link } from "react-router-dom";
 
 interface course {
   title: string;
@@ -13,23 +18,31 @@ interface course {
   ratings: number;
   CoursePrice: number;
 }
-const Courses = () => {
+type propsTypes = {
+  isActive?: boolean;
+};
+const Courses = (props: propsTypes) => {
   const [courseData, setCourseData] = useState<course[]>([]);
-
+  const [isPage, setIsPage] = useState<propsTypes | null>();
   useEffect(() => {
     fetch("./jsonFiles/courses.json")
       .then((res) => res.json())
-      .then((data) => setCourseData(data))
+      .then((data) => {
+        props.isActive ? setCourseData(data) : setCourseData(data.slice(0, 3));
+      })
       .catch((err) => alert(err));
   }, []);
-  console.log(courseData);
   return (
     <>
       <section>
         <div className="container">
-          <h2>Our Most Popular Courses</h2>
+          {!props.isActive && (
+            <h2 style={{ textAlign: "center" }}>Our Most Popular Courses</h2>
+          )}
+
+          {/* card wrapper  */}
           <CousesStyles>
-            {courseData.map((elm) => {
+            {courseData.map((elm, index) => {
               const {
                 title,
                 ratings,
@@ -42,31 +55,52 @@ const Courses = () => {
                 name,
                 CoursePrice,
               }: course = elm;
-              {
-                console.log(name);
-              }
+
               return (
-                <div className="courses__card">
-                  <h4 className="title">{title}</h4>
-                  <div>
-                    <span className="ratings">{ratings}</span>
+                // card mapping function
+                <div className="courses__card" key={index}>
+                  <img
+                    src={image}
+                    alt=""
+                    className="courses__card-CoverImage"
+                  />
+                  <div className="courses__card-ratingsInfo">
+                    <span className="ratings">
+                      <span> {ratings}</span>
+                      <StarIcon />
+                    </span>
                     <span className="reviewCount">{reviewCount}</span>
-                    <div className="enrolledStudent">{enrolledStudent}</div>
+                    <div className="enrolledStudent">
+                      {enrolledStudent} students
+                    </div>
                   </div>
-                  <div className="lecture__info">
-                    <span className="lecture__length">{lectureLength}</span>
-                    <span className="lecture__classes">{lectureClasses}</span>
-                    <span className="lecture__type">{lectureType}</span>
+                  <div className="courses__card-lectureInfo">
+                    <span className="lecture__length">
+                      <AccessTimeIcon /> {lectureLength}
+                    </span>
+                    <span className="lecture__classes">
+                      <StickyNote2Icon />
+                      {lectureClasses}
+                    </span>
+                    <span className="lecture__type">
+                      <SignalCellularAltIcon />
+                      {lectureType}
+                    </span>
                   </div>
                   <div className="teacher__info">
                     <img src={image} alt="" className="teacher__image" />
-                    <span className="course__price">{name}</span>
-                    <span className="coursePrice">{CoursePrice}</span>
+                    <span className="teacher__info-name">{name}</span>
+                    <span className="coursePrice">${CoursePrice}.00</span>
                   </div>
                 </div>
               );
             })}
           </CousesStyles>
+          {!props.isActive && (
+            <Link to={"/courses"}>
+              <button className="btn">Explore All</button>
+            </Link>
+          )}
         </div>
       </section>
     </>

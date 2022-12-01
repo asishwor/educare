@@ -1,6 +1,6 @@
 [
   {
-    "title": "Graphic Design MasterClass LEarn GREAT Design",
+    "title": "Graphic Design MasterClass Learn GREAT Design",
     "ratings": 4.5,
     "reviewCount": "(102,716)",
     "enrolledStudent": "46,116",
@@ -19,7 +19,7 @@
     "lectureLength": "30 hr",
     "lectureClasses": "90 lectures",
     "lectureType": "Beginner",
-    "image": "./images/teacher2.jpg",
+    "image": "./images/teacher1.jpg",
     "name": "Surja Das",
     "CoursePrice": 112.0
   },
@@ -31,7 +31,7 @@
     "lectureLength": "15 hr",
     "lectureClasses": "64 lectures",
     "lectureType": "Beginner",
-    "image": "./images/teacher3.jpg",
+    "image": "./images/teacher5.jpg",
     "name": "Kumal Hasan",
     "CoursePrice": 99.0
   },
@@ -43,7 +43,55 @@
     "lectureLength": "11 hr",
     "lectureClasses": "46 lectures",
     "lectureType": "beginner",
-    "image": "./images/teacher.jpg",
+    "image": "./images/teacher6.jpg",
+    "name": "Umar Ajmal",
+    "CoursePrice": 89.0
+  },
+  {
+    "title": "Computing in Python I: Fundamentals and Procedural Programming",
+    "ratings": 4.5,
+    "reviewCount": "(102,716)",
+    "enrolledStudent": "46,116",
+    "lectureLength": "11 hr",
+    "lectureClasses": "46 lectures",
+    "lectureType": "beginner",
+    "image": "./images/teacher7.png",
+    "name": "Umar Ajmal",
+    "CoursePrice": 89.0
+  },
+  {
+    "title": "Programming for All",
+    "ratings": "4.7",
+    "reviewCount": "(115,716)",
+    "enrolledStudent": "88,116",
+    "lectureLength": "30 hr",
+    "lectureClasses": "90 lectures",
+    "lectureType": "Beginner",
+    "image": "./images/teacher1.jpg",
+    "name": "Surja Das",
+    "CoursePrice": 112.0
+  },
+  {
+    "title": "How to code : Complex Data ",
+    "ratings": 4.3,
+    "reviewCount": "(90,445)",
+    "enrolledStudent": "46,116",
+    "lectureLength": "15 hr",
+    "lectureClasses": "64 lectures",
+    "lectureType": "Beginner",
+    "image": "./images/teacher8.jpg",
+    "name": "Kumal Hasan",
+    "CoursePrice": 99.0
+  },
+  {
+    "title": "Graphic Design MasterClass LEarn GREAT Design",
+    "ratings": 4.6,
+    "reviewCount": "(102,716)",
+    "enrolledStudent": "46,116",
+    "lectureLength": "11 hr",
+    "lectureClasses": "46 lectures",
+    "lectureType": "beginner",
+    "image": "./images/teacher3.png",
     "name": "Umar Ajmal",
     "CoursePrice": 89.0
   }
