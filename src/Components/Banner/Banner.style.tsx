@@ -4,9 +4,11 @@ export const BannerStyle = styled.div`
   @media (min-width: 992px) {
     flex-direction: row;
     align-items: center;
+    padding: 100px 0;
   }
+  padding-top: 80px;
+
   flex-direction: column-reverse;
-  padding: 100px 0;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -36,10 +38,9 @@ export const BannerStyle = styled.div`
       margin-left: 45px;
       right: 40px;
       video {
-      object-fit: cover;
-      aspect-ratio: 1.6;
-      width:90%;
-
+        object-fit: cover;
+        aspect-ratio: 1.6;
+        width: 90%;
       }
     }
     video {

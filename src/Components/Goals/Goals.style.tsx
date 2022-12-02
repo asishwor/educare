@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const GoalsCardWrapper: any = styled.div`
-  padding: 90px 0;
+  padding: 80px 0;
   text-align: center;
   p {
     width: min(650px, 100%);
@@ -14,6 +14,7 @@ export const GoalsCardWrapper: any = styled.div`
     grid-template-columns: repeat(2, 1fr);
     @media (min-width: 992px) {
       grid-template-columns: repeat(3, 1fr);
+      padding: 90px 0;
     }
     @media (max-width: 767px) {
       grid-template-columns: 1fr;

@@ -1,0 +1,42 @@
+[
+    {
+        "name":"Ushman Khalid",
+        "proff":"Graphic Designer",
+        "image":"./images/profile.jpg"
+    },
+    {
+        "name":"Manik Mahmud",
+        "proff":"Software Engineer",
+        "image":"./images/profile1.jpg"
+    },
+    {
+        "name":"Norob Hossain",
+        "proff":"Motivational speaker",
+        "image":"./images/profile2.jpg"
+    },
+    {
+        "name":"Isfak Ahmed",
+        "proff":"Disital marketer",
+        "image":"./images/profile3.jpg"
+    },
+    {
+        "name":"Sofwn Bepari",
+        "proff":"SEO Expert",
+        "image":"./images/profile4.jpg"
+    },
+    {
+        "name":"Anubhav Bassi",
+        "proff":"Graphic Designer",
+        "image":"./images/profile5.jpg"
+    },
+    {
+        "name":"Ansu Dixit",
+        "proff":"Product Designer",
+        "image":"./images/profile1.jpg"
+    },
+    {
+        "name":"Tammy Bhat",
+        "proff":"Web Developer",
+        "image":"./images/profile5.jpg"
+    }
+]

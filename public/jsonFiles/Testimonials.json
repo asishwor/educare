@@ -1,0 +1,42 @@
+[
+  {
+    "image": "./images/profile.jpg",
+    "heading": "Icicles Everest base camp trek.",
+    "content": "Did the trip with Icicles Adventure treks and tours. Well organised and very well looked after by the guides Lok and Santosh. Excellent scenery and hard trekking. Highly recommended",
+    "ratingStar": 5,
+    "name": "Stuart N",
+    "profileImage": "./images/profile1.jpg"
+  },
+  {
+    "image": "./images/profile5.jpg",
+    "heading": "Everest Base Camp Trek with ACE the Himalayas",
+    "content": "I highly recommend Ace the Himalayas. Prem and the entire staff, especially the guides Dipesh and Ramesh were excellent for the entire program.We felt safe and very well looked after for the entire trek",
+    "ratingStar": 4,
+    "name": "Graham S",
+    "profileImage": "./images/profile1.jpg"
+  },
+  {
+    "image": "./images/profile4.jpg",
+    "heading": "14 day Everest Base Camp Trek",
+    "content": "Amazing 14 day trek to Everest Base Camp with Ace the Himalaya. The accommodations and meals along the way were great. Ram, our guide, was the best and really made an effort to make everyone feel comfortable on the trek. He inspired us and also educated us on various topics as we approached EBC. If I come back to Nepal for another trek, I would use Ram again as our guide",
+    "ratingStar": 5,
+    "name": "Nicholas T",
+    "profileImage": "./images/profile3.jpg"
+  },
+  {
+    "image": "./images/profile1.jpg",
+    "heading": "Unforgettable",
+    "content": "The guides where professional and fun from start to finish! We were well taken care of for this experience that truely felt once in a lifetime. I loved every minute, even when I was close to crying from the cold!",
+    "ratingStar": 5,
+    "name": "Timana H",
+    "profileImage": "./images/profile4.jpg"
+  },
+  {
+    "image": "./images/profile2.jpg",
+    "heading": "The best guide and trek in Nepal. Drop the mike.",
+    "content": "Once again Ace delivered 100%. This is our second trek with Ram and Ace The Himalayas and would definately return. It is a no frills trek and all was explained at a information night prior to departure. If anything i expected less and was pleasantly surprised on several occassions. Due to the nature and environment of the trek everything met expectations. Ram our guide, who we requested as we had treked with him pre pandemic, was as amazing as ever. His knowledge and extensive experience is evident and he is always willing to answer any question thrown at him and always had our health and",
+    "ratingStar": 4,
+    "name": "Adam powell",
+    "profileImage": "./images/profile5.jpg"
+  }
+]

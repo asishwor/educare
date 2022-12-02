@@ -17,6 +17,7 @@ box-sizing: border-box;
 }
 img{
     max-width: 100%;
+    object-fit: cover;
 }
 :root{
     --clr-primary:#877cf6;

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const CousesStyles = styled.div`
+  margin-bottom: 30px;
   @media (min-width: 992px) {
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 48px;

@@ -4,6 +4,8 @@ import { BannerHeaderContainer } from "../Components/Banner/Banner.style";
 import Courses from "../Components/courses/Couses";
 import Goals from "../Components/Goals/Goals";
 import Header from "../Components/Header/Header";
+import Mentor from "../Components/mentor/Mentor";
+import Testimonials from "../Components/testimonials/Testimonials";
 
 const Home = () => {
   return (
@@ -14,6 +16,8 @@ const Home = () => {
       </BannerHeaderContainer>
       <Goals />
       <Courses />
+      <Mentor />
+      <Testimonials />
     </>
   );
 };
