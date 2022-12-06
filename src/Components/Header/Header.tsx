@@ -3,7 +3,11 @@ import { Nav, Logo, NavList, ButtonWrapper } from "./Header.style";
 const Header = () => {
   return (
     <div className="container">
+      
       <Nav>
+      <button className="toggle__menu ">
+        <span className="mobile__menu"></span>
+      </button>
         <Logo>
           <img src="./images/logo.png" alt="website Logo" />
         </Logo>

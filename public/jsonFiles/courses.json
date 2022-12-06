@@ -1,5 +1,6 @@
 [
   {
+    "id": "page_1",
     "title": "Graphic Design MasterClass Learn GREAT Design",
     "ratings": 4.5,
     "reviewCount": "(102,716)",
@@ -12,6 +13,8 @@
     "CoursePrice": 89.0
   },
   {
+    "id": "page_3",
+
     "title": "The Full Stack Web Developer Course",
     "ratings": "4.7",
     "reviewCount": "(115,716)",
@@ -24,6 +27,8 @@
     "CoursePrice": 112.0
   },
   {
+    "id": "page_4",
+
     "title": "Math For Data Science Masterclass ",
     "ratings": 4.3,
     "reviewCount": "(90,445)",
@@ -36,6 +41,8 @@
     "CoursePrice": 99.0
   },
   {
+    "id": "page_5",
+
     "title": "Graphic Design MasterClass LEarn GREAT Design",
     "ratings": 4.6,
     "reviewCount": "(102,716)",
@@ -48,6 +55,8 @@
     "CoursePrice": 89.0
   },
   {
+    "id": "page_6",
+
     "title": "Computing in Python I: Fundamentals and Procedural Programming",
     "ratings": 4.5,
     "reviewCount": "(102,716)",
@@ -60,6 +69,8 @@
     "CoursePrice": 89.0
   },
   {
+    "id": "page_7",
+
     "title": "Programming for All",
     "ratings": "4.7",
     "reviewCount": "(115,716)",
@@ -72,6 +83,7 @@
     "CoursePrice": 112.0
   },
   {
+    "id": "page_8",
     "title": "How to code : Complex Data ",
     "ratings": 4.3,
     "reviewCount": "(90,445)",
@@ -84,6 +96,7 @@
     "CoursePrice": 99.0
   },
   {
+    "id": "page_9",
     "title": "Graphic Design MasterClass LEarn GREAT Design",
     "ratings": 4.6,
     "reviewCount": "(102,716)",

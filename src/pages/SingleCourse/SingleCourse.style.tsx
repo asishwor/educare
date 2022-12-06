@@ -32,6 +32,8 @@ export const SinglePageContent = styled.section`
     display: flex;
     align-items: center;
     flex-direction: column;
+    transition: var(--transition);
+
     @media (min-width: 768px) {
       flex-direction: row;
     }

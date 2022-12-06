@@ -14,6 +14,7 @@ export const TestiomialsStyles = styled.section`
 
     img {
       max-width: 100%;
+      height: 400px;
     }
 
     /* slider  left side */
@@ -68,11 +69,11 @@ export const TestiomialsStyles = styled.section`
     }
     &__content {
       width: min(600px, 100%);
-      padding-left: 100px;
       text-align: center;
 
       @media (min-width: 992px) {
         text-align: start;
+        padding-left: 100px;
       }
       &-reviews {
         display: flex;
@@ -148,10 +149,14 @@ export const TestiomialsStyles = styled.section`
     align-items: center;
     gap: 20px;
     justify-content: flex-end;
+    @media (max-width: 768px) {
+      display: none;
+    }
     button {
       border: 1px solid transparent;
       color: var(--clr-white);
       padding: 8px 7px;
+
       cursor: pointer;
       line-height: 0;
       border-radius: 50%;

@@ -4,9 +4,10 @@ import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import StarIcon from "@mui/icons-material/Star";
 import StickyNote2Icon from "@mui/icons-material/StickyNote2";
 import SignalCellularAltIcon from "@mui/icons-material/SignalCellularAlt";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 interface course {
+  id: string;
   title: string;
   reviewCount: string;
   enrolledStudent: number;
@@ -44,6 +45,7 @@ const Courses = (props: propsTypes) => {
           <CousesStyles>
             {courseData.map((elm, index) => {
               const {
+                id,
                 title,
                 ratings,
                 reviewCount,
@@ -59,39 +61,42 @@ const Courses = (props: propsTypes) => {
               return (
                 // card mapping function
                 <div className="courses__card" key={index}>
-                  <img
-                    src={image}
-                    alt=""
-                    className="courses__card-CoverImage"
-                  />
-                  <div className="courses__card-ratingsInfo">
-                    <span className="ratings">
-                      <span> {ratings}</span>
-                      <StarIcon />
-                    </span>
-                    <span className="reviewCount">{reviewCount}</span>
-                    <div className="enrolledStudent">
-                      {enrolledStudent} students
+                  <Link to={`/courses/${id}`}>
+                    <img
+                      src={image}
+                      alt=""
+                      className="courses__card-CoverImage"
+                    />
+                    <div className="courses__card-ratingsInfo">
+                      <span className="ratings">
+                        <span> {ratings}</span>
+                        <StarIcon />
+                      </span>
+                      <span className="reviewCount">{reviewCount}</span>
+                      <div className="enrolledStudent">
+                        {enrolledStudent} students
+                      </div>
                     </div>
-                  </div>
-                  <div className="courses__card-lectureInfo">
-                    <span className="lecture__length">
-                      <AccessTimeIcon /> {lectureLength}
-                    </span>
-                    <span className="lecture__classes">
-                      <StickyNote2Icon />
-                      {lectureClasses}
-                    </span>
-                    <span className="lecture__type">
-                      <SignalCellularAltIcon />
-                      {lectureType}
-                    </span>
-                  </div>
-                  <div className="teacher__info">
-                    <img src={image} alt="" className="teacher__image" />
-                    <span className="teacher__info-name">{name}</span>
-                    <span className="coursePrice">${CoursePrice}.00</span>
-                  </div>
+                    <div className="courses__card-lectureInfo">
+                      <span className="lecture__length">
+                        <AccessTimeIcon /> {lectureLength}
+                      </span>
+                      <span className="lecture__classes">
+                        <StickyNote2Icon />
+                        {lectureClasses}
+                      </span>
+                      <span className="lecture__type">
+                        <SignalCellularAltIcon />
+                        {lectureType}
+                      </span>
+                    </div>
+                    <div className="teacher__info">
+                      <img src={image} alt="" className="teacher__image" />
+                      <span className="teacher__info-name">{name}</span>
+                      <span className="coursePrice">${CoursePrice}.00</span>
+                    </div>
+                    <Outlet />
+                  </Link>
                 </div>
               );
             })}

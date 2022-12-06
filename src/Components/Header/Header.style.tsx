@@ -20,6 +20,43 @@ export const Nav = styled.div`
   display: flex;
   align-items: start;
   padding: 20px;
+  // MOBILE MENU Style
+  .toggle__menu {
+    background-color: transparent;
+    border: transparent;
+    margin-bottom: 20px;
+  }
+  .mobile__menu {
+    @media (min-width: 992px) {
+      display: none;
+    }
+    display: inline-block;
+    background-color: var(--clr-white);
+    position: relative;
+    height: 2px;
+    width: 22px;
+    &::after {
+      content: "";
+      height: 2px;
+      width: 100%;
+      background-color: var(--clr-white);
+      position: absolute;
+      top: -5px;
+      left: 0;
+      rotate: 45deg;
+    }
+    &::before {
+      content: "";
+      height: 2px;
+      width: 100%;
+      background-color: var(--clr-white);
+      position: absolute;
+      top: 5px;
+      left: 0;
+      rotate: -45deg;
+      translate: 9px;
+    }
+  }
 `;
 export const Logo = styled.div`
   height: 70px;
