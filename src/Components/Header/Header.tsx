@@ -1,13 +1,16 @@
+import { Link, NavLink } from "react-router-dom";
 import { Nav, Logo, NavList, ButtonWrapper } from "./Header.style";
+type propsType = {
+  home?: boolean;
+};
 
-const Header = () => {
+const Header = (props: propsType) => {
   return (
     <div className="container">
-      
       <Nav>
-      <button className="toggle__menu ">
-        <span className="mobile__menu"></span>
-      </button>
+        <button className="toggle__menu ">
+          <span className="mobile__menu"></span>
+        </button>
         <Logo>
           <img src="./images/logo.png" alt="website Logo" />
         </Logo>
@@ -15,16 +18,25 @@ const Header = () => {
         <div>
           <NavList>
             <li>
-              <a href="">Home</a>
+              <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              <a href="">Course</a>
+              <NavLink to="/courses">Course</NavLink>
             </li>
             <li>
-              <a href="">Mentors</a>
+              <NavLink to="/mentor">Mentors</NavLink>
             </li>
             <li>
-              <a href="">Testimonials</a>
+              <NavLink
+                to="/testimonials"
+                style={{
+                  color: props.home
+                    ? "var(--clr-white)"
+                    : "var(--clr-body-font)",
+                }}
+              >
+                Testimonials
+              </NavLink>
             </li>
           </NavList>
         </div>

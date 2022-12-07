@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { BannerStyle } from "./Banner.style";
 
 const Banner = () => {
@@ -10,7 +11,9 @@ const Banner = () => {
             Online tutoring in Nepal's Best and largest platform The most
             comprehensive online learning plaform
           </p>
-          <button className="btn btn-primary">Get Started</button>
+          <Link to={"/courses"}>
+            <button className="btn btn-primary">Get Started</button>
+          </Link>
         </div>
         <div className="banner__right">
           <video src="./images/banner.mp4" controls></video>

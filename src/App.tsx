@@ -1,24 +1,35 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import { CourseContext } from "./ContextApi/CoursesApi";
 import CoursesPage from "./pages/Courses/CoursesPage";
 import Home from "./pages/Home";
+import { useContext } from "react";
 import SingleCourse from "./pages/SingleCourse/SingleCourse";
-import Parent from "./Parent";
+import MentorsPage from "./pages/mentor/MentorsPage";
+import TestimnonialsPage from "./pages/testimonials/TestimnonialsPage";
+import Header from "./Components/Header/Header";
+import FooterComponent from "./Components/footer/Footer";
 
 function App(): JSX.Element {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/courses" element={<CoursesPage />} />
-        <Route path="/singlepage" element={<SingleCourse />} />
-        <Route path="/learn" element={<SingleCourse />} />
-        <Route path={"*"} element="Page not found" />
-        {/* nesting route  */}
-        <Route path="education" element={<Parent />}>
-          <Route index element="Primary Education" />
-          <Route path="secondary" element="Secondary Education" />
+        <Route
+          path="/"
+          element={
+            <>
+              <Home />
+            </>
+          }
+        ></Route>
+        <Route path="/courses">
+          <Route index element={<CoursesPage />} />
+          <Route path=":id" element={<SingleCourse />} />
         </Route>
+        <Route path="testimonials" element={<TestimnonialsPage />} />
+        <Route path="mentor" element={<MentorsPage />} />
+        <Route path={"*"} element="Page not found" />
       </Routes>
+      <FooterComponent />
     </>
   );
 }

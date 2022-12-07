@@ -3,6 +3,7 @@ import { GoalsCardWrapper } from "./Goals.style";
 import DesignServicesIcon from "@mui/icons-material/DesignServices";
 import QueryStatsIcon from "@mui/icons-material/QueryStats";
 import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
+import courseData from "../../jsonFiles/goals.json";
 
 const Goals = () => {
   //GetIcon function
@@ -23,14 +24,7 @@ const Goals = () => {
     content: string;
     icon: string;
   }
-  const [goal, setGoal] = useState<goalsObject[]>();
-  useEffect(() => {
-    fetch("./jsonFiles/goals.json")
-      .then((res) => res.json())
-      .then((data) => {
-        setGoal(data);
-      });
-  }, []);
+  const [goal, setGoal] = useState<goalsObject[]>(courseData);
 
   return (
     <>
@@ -46,7 +40,6 @@ const Goals = () => {
             </p>
             <div className="goals__cardWrapper">
               {goal?.map((elm) => {
-                console.log(elm.icon);
                 return (
                   <div className="card" key={elm.id}>
                     {getIcon(elm.icon)}

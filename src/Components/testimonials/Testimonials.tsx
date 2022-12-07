@@ -1,5 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { TestiomialsStyles } from "./Testimonials.style";
+import TestimonialsData from "../../jsonFiles/Testimonials.json";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -12,6 +13,7 @@ import { Navigation } from "swiper";
 import StarIcon from "@mui/icons-material/Star";
 import WestIcon from "@mui/icons-material/West";
 import EastIcon from "@mui/icons-material/East";
+import { CourseContext } from "../../ContextApi/CoursesApi";
 //create data types for state
 type TestimonialsData = {
   image: string;
@@ -23,19 +25,8 @@ type TestimonialsData = {
 };
 
 const Testimonials = () => {
-  const [testimonialsData, setTestimonialsData] = useState<TestimonialsData[]>(
-    []
-  );
-
-  // fetching data from json file
-  useEffect(() => {
-    fetch("./jsonFiles/testimonials.json")
-      .then((res) => res.json())
-      .then((data) => setTestimonialsData(data))
-      .catch((err) => alert(err));
-  }, []);
-
-  // start Jsx :
+  const [testimonialsData, setTestimonialsData] =
+    useState<TestimonialsData[]>(TestimonialsData);
 
   return (
     <div className="container">

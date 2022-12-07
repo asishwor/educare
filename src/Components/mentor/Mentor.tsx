@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
 import { MentorData, MentorStyles } from "./Mentor.style";
+import MentorD from "../../jsonFiles/mentor.json";
 
 const Mentor = () => {
   type mentor = {
@@ -8,16 +9,10 @@ const Mentor = () => {
     proff: string;
     image: string;
   };
-  const [mentorData, setMentorData] = useState<mentor[]>([]);
+  const [mentorData, setMentorData] = useState<mentor[]>(MentorD);
 
   // fetching data from json and set state
 
-  useEffect(() => {
-    fetch("./jsonFiles/mentor.json")
-      .then((res) => res.json())
-      .then((data) => setMentorData(data))
-      .catch((err) => alert(err));
-  }, []);
   return (
     <>
       <div className="container">

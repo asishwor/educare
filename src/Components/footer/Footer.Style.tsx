@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Footer = styled.footer`
   .footer {
     display: grid;
+    padding: 60px 0;
     @media (min-width: 768px) {
       grid-template-columns: repeat(12, 1fr);
     }

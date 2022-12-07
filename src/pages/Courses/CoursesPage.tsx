@@ -1,4 +1,5 @@
 import Courses from "../../Components/courses/Couses";
+import FooterComponent from "../../Components/footer/Footer";
 import Header from "../../Components/Header/Header";
 import { CoursesPageContent } from "../Courses/CoursePage.style";
 

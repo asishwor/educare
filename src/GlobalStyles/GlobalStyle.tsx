@@ -19,6 +19,9 @@ img{
     max-width: 100%;
     object-fit: cover;
 }
+.active{
+    color: var(--clr-primary) !important;
+}
 :root{
     --clr-primary:#877cf6;
     --clr-secondary: #151328;

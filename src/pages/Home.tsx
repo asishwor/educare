@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <>
       <BannerHeaderContainer>
-        <Header />
+        <Header home />
         <Banner />
       </BannerHeaderContainer>
       <Goals />
@@ -21,10 +21,8 @@ const Home = () => {
       <Mentor />
       <Testimonials />
       <Cta />
-      <FooterComponent />
     </>
   );
 };
 
 export default Home;
-// https://prnt.sc/eGZ2LnG0yova
